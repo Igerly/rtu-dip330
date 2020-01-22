@@ -6,11 +6,11 @@ public class PerfectNumber2 {
 
 	public static Set<Integer> divisors(int n) {
 
-        Set<Integer> x = new HashSet<Integer>();
-        
-		IntStream.rangeClosed(1, n/2).filter(i -> n % i == 0).forEach(i -> x.add(i));
- 
-        return x;
+		Set<Integer> x = new HashSet<Integer>();
+
+			IntStream.rangeClosed(1, n/2).filter(i -> n % i == 0).forEach(i -> x.add(i));
+
+		return x;
 
 	}
 
