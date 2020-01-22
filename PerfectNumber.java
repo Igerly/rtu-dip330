@@ -4,6 +4,7 @@ import java.util.Set;
 public class PerfectNumber {
 
 	public static Set<Integer> divisors(int n) {
+		
         Set<Integer> x = new HashSet<Integer>();
         
         for (int i = 1; i <= n; i++) {
@@ -13,9 +14,11 @@ public class PerfectNumber {
         }
  
         return x;
+		
 	}
 
 	public static void detect(int n) {
+		
 		Set<Integer> x = PerfectNumber.divisors(n);
 		int sum = -n;
 
@@ -30,6 +33,7 @@ public class PerfectNumber {
 		} else {
 			System.out.println("The number " + n + " is a deficient number");
 		}
+		
 	}
 
 	public static void main(String[] args) {
@@ -39,5 +43,6 @@ public class PerfectNumber {
 		PerfectNumber.detect(8);
 		PerfectNumber.detect(20);
 		PerfectNumber.detect(28);
+		
 	}
 }
